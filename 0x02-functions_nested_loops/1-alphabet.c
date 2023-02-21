@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: A function that prints the alphabet in lowercase, followed
- *              by a new line.
+ *              by a new line using void print_alphabet(void).
  *
  * Return: Always 0 (Success)
  */
