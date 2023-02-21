@@ -1,12 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
-
-#include <unistd.h>
-
-int _putchar(char c);
-
-#endif /* MAIN_H */
-
 #include "main.h"
 
 /**
@@ -29,17 +20,4 @@ int main(void)
     _putchar('\n');
 
     return (0);
-}
-
-/**
- * _putchar - Writes a character to standard output
- *
- * @c: The character to be written
- *
- * Return: When successful, returns the character written. If unsuccessful, returns -1 and
- *         sets error prompt appropriately.
- */
-int _putchar(char c)
-{
-    return (write(STDOUT_FILENO, &c, 1));
 }
