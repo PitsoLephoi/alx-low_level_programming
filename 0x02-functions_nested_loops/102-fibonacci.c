@@ -8,20 +8,20 @@
 
 int main(void)
 {
-    int i, n = 50;
-    long int f1 = 1, f2 = 2, next;
+	int i, n = 50;
+	long int f1 = 1, f2 = 2, next;
 
-    printf("%ld, %ld", f1, f2);
+	printf("%ld, %ld", f1, f2);
 
-    for (i = 2; i < n; i++)
-    {
-        next = f1 + f2;
-        printf(", %ld", next);
-        f1 = f2;
-        f2 = next;
-    }
+	for (i = 2; i < n; i++)
+	{
+	next = f1 + f2;
+		printf(", %ld", next);
+	f1 = f2;
+	f2 = next;
+	}
 
-    printf("\n");
+	printf("\n");
 
-    return (0);
+	return (0);
 }
