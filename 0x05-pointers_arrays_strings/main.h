@@ -1,5 +1,5 @@
-#ifndef ALX_C-Pointers_arrays_and_strings 
-#define ALX_C-Pointers_arrays_and_strings
+#ifndef ALX_0X05
+#define ALX_0X05
 
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
