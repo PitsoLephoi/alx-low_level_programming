@@ -8,13 +8,7 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1;
-	int value = 0;
-
-	while (*s != '\0' && (*s < '0' || *s > '9') && *s != '+' && *s != '-')
-	{
-		s++;
-	}
+	int sign = 1, num = 0;
 
 	if (*s == '-')
 	{
@@ -28,16 +22,9 @@ int _atoi(char *s)
 
 	while (*s >= '0' && *s <= '9')
 	{
-
-	if (value > INT_MAX / 10 ||
-(value == INT_MAX / 10 && *s - '0' > INT_MAX % 10))
-	{
-		return (sign == 1 ? INT_MAX : INT_MIN);
+		num = num * 10 + (*s - '0');
+		s++;
 	}
 
-	value = value * 10 + (*s - '0');
-	s++;
-	}
-
-	return (sign * value);
+	return (sign * num);
 }
