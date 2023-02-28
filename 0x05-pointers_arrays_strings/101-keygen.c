@@ -2,27 +2,27 @@
 #include <stdlib.h>
 #include <time.h>
 
+#define SUM_OF_BYTES 2772
+
 /**
- * main - generates random valid passwords for the program 101-crackme
+ * main - generates random valid passwords for 101-crackme
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
-	int i, sum, n;
-	char c;
+	int sum, n;
+	time_t t;
 
-	sum = 0;
-	srand(time(0));
-	while (sum < 2772)
+	srand((unsigned int) time(&t));
+	while (sum < SUM_OF_BYTES)
 	{
-		n = rand() % 78;
-		if (n == 0)
-			continue;
-		c = (char)n + 48;
+		n = rand() % 128;
+		if (n < 33)
+			n += 33;
+		printf("%c", n);
 		sum += n;
-		putchar(c);
 	}
-	putchar(2772 - sum + 48);
+	printf("%c", SUM_OF_BYTES - sum);
 	return (0);
 }
