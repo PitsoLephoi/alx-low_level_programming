@@ -2,36 +2,34 @@
 
 /**
  * cap_string - Capitalizes all words of a string.
- * @s: Pointer to the string.
+ * @str: Pointer to the string.
  *
  * Return: Pointer to the modified string.
  */
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
-	int i = 0;
+	int index = 0;
 
 	/* Capitalize the first letter of the string, if it is a lowercase letter. */
-	if (*(s + i) >= 'a' && *(s + i) <= 'z')
-	*(s + i) -= 32;
+	if (str[index] >= 'a' && str[index] <= 'z')
+	str[index] -= 32;
 
 	/* Loop through each character in the string. */
-	while (*(s + i) != '\0')
+	while (str[index])
 	{
-
-	if (*(s + i) == ' ' || *(s + i) == '\t' || *(s + i) == '\n' ||
-	*(s + i) == ',' || *(s + i) == ';' || *(s + i) == '.' ||
-	*(s + i) == '!' || *(s + i) == '?' || *(s + i) == '"' ||
-	*(s + i) == '(' || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}')
+	if (str[index] == ' ' || str[index] == '\t' || str[index] == '\n' ||
+	str[index] == ',' || str[index] == ';' || str[index] == '.' ||
+	str[index] == '!' || str[index] == '?' || str[index] == '"' ||
+	str[index] == '(' || str[index] == ')' || str[index] == '{' ||
+	str[index] == '}')
 	{
-		i++;
+	index++;
 
-		if (*(s + i) >= 'a' && *(s + i) <= 'z')
-		*(s + i) -= 32;
+	if (str[index] >= 'a' && str[index] <= 'z')
+		str[index] -= 32;
 	}
 
-	i++;
+	index++;
 	}
-
-	/* Return a pointer to the modified string. */
-	return (s);
+	return (str);
 }
