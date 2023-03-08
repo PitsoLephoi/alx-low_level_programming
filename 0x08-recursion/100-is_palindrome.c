@@ -19,12 +19,10 @@ int is_palindrome_helper(char *s, int len, int i)
 }
 
 /**
- * is_palindrome - checks if a string is palindrome
- * @s: the string to check
- *
- * Return: 1 if the string is palindrome, 0 otherwise
- */
-
+* _strlen - Calculates the length of a string recursively
+* @s: The string to calculate the length of
+* Return: The length of the string
+*/
 int _strlen(char *s)
 {
 	int len = 0;
@@ -37,6 +35,12 @@ int _strlen(char *s)
 	return (0);
 }
 
+/**
+ * is_palindrome - checks if a string is palindrome
+ * @s: the string to check
+ *
+ * Return: 1 if the string is palindrome, 0 otherwise
+ */
 int is_palindrome(char *s)
 {
 	int len;
