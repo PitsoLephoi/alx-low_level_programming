@@ -24,12 +24,25 @@ int is_palindrome_helper(char *s, int len, int i)
  *
  * Return: 1 if the string is palindrome, 0 otherwise
  */
+
+int _strlen(char *s)
+{
+	int len = 0;
+
+	if (*s)
+	{
+	len = _strlen(s + 1);
+		return (len + 1);
+	}
+	return (0);
+}
+
 int is_palindrome(char *s)
 {
 	int len;
 
 	len = _strlen(s);
-	
+
 	if (len <= 1)
 		return (1);
 	return (is_palindrome_helper(s, len, 0));
