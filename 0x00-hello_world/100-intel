@@ -1,0 +1,2 @@
+#!/bin/bash
+CFILE=$CFILE; gcc -S -masm=intel $CFILE; mv ${CFILE%.*}.s main.s
