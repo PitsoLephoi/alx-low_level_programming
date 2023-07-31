@@ -3,6 +3,7 @@
 
 #include <stddef.h>
 #include <stdio.h>
+
 /* 0. _memset */
 char *_memset(char *s, char b, unsigned int n);
 
@@ -23,6 +24,7 @@ char *_strstr(char *haystack, char *needle);
 
 /* 6. print_chessboard */
 void print_chessboard(char (*a)[8]);
+int _putchar(char c);
 
 /* 7. print_diagsums */
 void print_diagsums(int *a, int size);
