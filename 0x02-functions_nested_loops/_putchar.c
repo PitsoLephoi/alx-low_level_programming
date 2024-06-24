@@ -7,16 +7,7 @@
  * Return: Always return 0 (success)
  */
 
-void _putchar(void)
+void _putchar(int c)
 {
-    putchar('_');
-    putchar('p');
-    putchar('u');
-    putchar('t');
-    putchar('c');
-    putchar('h');
-    putchar('a');
-    putchar('r');
-    putchar('\n');
-
+	putchar(c);
 }
