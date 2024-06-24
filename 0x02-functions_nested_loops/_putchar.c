@@ -7,7 +7,7 @@
  * Return: Always return 0 (success)
  */
 
-int _putchar(void)
+void _putchar(void)
 {
     putchar('_');
     putchar('p');
@@ -18,5 +18,5 @@ int _putchar(void)
     putchar('a');
     putchar('r');
     putchar('\n');
-    return (0);
+
 }
