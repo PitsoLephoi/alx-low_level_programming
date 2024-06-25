@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <limits.h>
 #include <inttypes.h>
 
@@ -11,5 +12,6 @@ void print_alphabet_x10(void);
 int _islower(int c);
 int _isalpha(int c);
 int print_sign(int n);
+int _abs(int j);
 
 #endif
