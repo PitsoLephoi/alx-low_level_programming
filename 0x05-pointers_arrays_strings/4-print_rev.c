@@ -19,7 +19,7 @@
     
     while(i >= 0)
     {
-        _putchar(s[i - 1]); /*Print each character starting from the end of the string*/
+        _putchar(s[i]); /*Print each character starting from the end of the string*/
         --i;
     }
     _putchar('\n');
