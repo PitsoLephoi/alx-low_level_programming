@@ -5,6 +5,7 @@
 #include<stdio.h>
 #include<string.h>
 
+size_t s_length(const char *s);
 void _putchar(int c);
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
