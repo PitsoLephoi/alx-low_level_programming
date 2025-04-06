@@ -1,0 +1,11 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include<string.h>
+#include<stdio.h>
+#include<string.h>
+
+void _putchar(int c);
+char *_strcat(char *dest, char *src);
+
+#endif
