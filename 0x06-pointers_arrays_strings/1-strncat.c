@@ -21,7 +21,7 @@
         ++dest_len;
     }
 
-    while(i < n && src[i] != '\0') /* Append each character from src to dest */
+    while(i < n) /* Append each character from src to dest */
     {
         dest[dest_len + i] = src[i];
         ++i;
