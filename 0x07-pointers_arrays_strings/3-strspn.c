@@ -1,8 +1,13 @@
 #include "main.h"
 
 /**
+ * _strspn - Returns the length of the initial segment of 's' 
+ *           consisting only of characters in 'accept'.
  * 
+ * @s: The string to search.
+ * @accept: The string of characters to match.
  * 
+ * Return: The count of characters in 's' that are also in 'accept'.
  */
 
  unsigned int _strspn(char *s, char *accept)
